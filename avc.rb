@@ -11,7 +11,7 @@ class Avc < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/trevarix/agentic-vc/releases/download/v0.2.1/avc_0.2.1_darwin_amd64.tar.gz"
-      sha256 "c4a78c7c58e03aefb47f7c29f1d63813cc32dd9715b27b848dafbd66728634af"
+      sha256 "ebf1f1e1cf5dae001a78479d108ccc2eb5cf069f49ef6627f14cba8166938d0e"
 
       define_method(:install) do
         bin.install "avc"
@@ -19,7 +19,7 @@ class Avc < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/trevarix/agentic-vc/releases/download/v0.2.1/avc_0.2.1_darwin_arm64.tar.gz"
-      sha256 "d57eaa9a120c72c30f81bd7a495e71a895e16c6a2be2b14a85336dc33688d97f"
+      sha256 "475687aebe87137ae98bb77d966d9ac0d1dd764151b9ba676b8b6b166b4dbd72"
 
       define_method(:install) do
         bin.install "avc"
@@ -30,14 +30,14 @@ class Avc < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/trevarix/agentic-vc/releases/download/v0.2.1/avc_0.2.1_linux_amd64.tar.gz"
-      sha256 "364177d64618abb022498e78acd7bf71dd2b38ecb8b4f71bc971f8a3e24559c5"
+      sha256 "6fce23afaaf49df4e1264b61823316a4b316d3147ab036f66b3d75a8e5eff58a"
       define_method(:install) do
         bin.install "avc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/trevarix/agentic-vc/releases/download/v0.2.1/avc_0.2.1_linux_arm64.tar.gz"
-      sha256 "ad0edcdcd3ee96c574de361ec34be5aabb3cd0c48b16430abd14b54ec37822c0"
+      sha256 "d6eb963459e8a0435ccba240dae8d0d95a9698d082eebcd922d49df45260a64d"
       define_method(:install) do
         bin.install "avc"
       end
