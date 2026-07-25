@@ -5,21 +5,21 @@
 class Avc < Formula
   desc "Agentic Version Control — lightweight, agent-safe project snapshots"
   homepage "https://github.com/trevarix/agentic-vc"
-  version "0.3.0"
+  version "0.4.0"
   license "AGPL-3.0-only"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/trevarix/agentic-vc/releases/download/v0.3.0/avc_0.3.0_darwin_amd64.tar.gz"
-      sha256 "0f6f9a2efeefbda1c403e846c06ff7123033ca36e5bee3f6b379d2c7ea1d8659"
+      url "https://github.com/trevarix/agentic-vc/releases/download/v0.4.0/avc_0.4.0_darwin_amd64.tar.gz"
+      sha256 "9e6c8d2cdcd82eff41a9e414259e480d70b6c77e5b3c56d714b60f90c86a5069"
 
       define_method(:install) do
         bin.install "avc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/trevarix/agentic-vc/releases/download/v0.3.0/avc_0.3.0_darwin_arm64.tar.gz"
-      sha256 "04ed38772db4ca249d83139ada93c024f2bd61b2b86dc36466fc1ac2118cc552"
+      url "https://github.com/trevarix/agentic-vc/releases/download/v0.4.0/avc_0.4.0_darwin_arm64.tar.gz"
+      sha256 "09c3c04ce7b31275d576c6c253823058a6fa04c8513057259c357b9823b156cf"
 
       define_method(:install) do
         bin.install "avc"
@@ -29,15 +29,15 @@ class Avc < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/trevarix/agentic-vc/releases/download/v0.3.0/avc_0.3.0_linux_amd64.tar.gz"
-      sha256 "10acdab5b20607d823a32e0a22f2e0375f17fe40b7dcb343386552c4dbd72eab"
+      url "https://github.com/trevarix/agentic-vc/releases/download/v0.4.0/avc_0.4.0_linux_amd64.tar.gz"
+      sha256 "0a58e3003101820792ab87c7c83ff37785329fcfa7eefb8105cd0e1fbc6d12a2"
       define_method(:install) do
         bin.install "avc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/trevarix/agentic-vc/releases/download/v0.3.0/avc_0.3.0_linux_arm64.tar.gz"
-      sha256 "e8f170d072f6ca3d14487fc37e8f3254848cba220be42a8908de051c876fc937"
+      url "https://github.com/trevarix/agentic-vc/releases/download/v0.4.0/avc_0.4.0_linux_arm64.tar.gz"
+      sha256 "5b2f738ca814e09ea9a86752ab2754c346d7ac26f1b6b6184775702bd1c0b42a"
       define_method(:install) do
         bin.install "avc"
       end
